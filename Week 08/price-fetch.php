@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 1); // display any runtime errors
+ini_set('display_startup_errors', 1); // display errors that occur during PHP's startup sequence
+error_reporting(E_ALL); // sets the error reporting level to display all types of errors
 
 // Print incoming form data (remove after debugging)
 // echo '<pre>';
@@ -14,7 +14,7 @@ $username = 'root';
 $password = '';
 $dbname = 'javajam';
 
-// Create a new connection object to the MySQL database using the credentials
+// Create a new connection 
 $db = new mysqli($servername, $username, $password, $dbname);
 
 // Check the connection to the database
@@ -22,7 +22,7 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-// Initialize variables with default values to avoid undefined warnings
+// Initialize variables with empty strings to avoid undefined warnings
 $justJavaPrice = $cafeAuLaitSinglePrice = $cafeAuLaitDoublePrice = $icedCappuccinoSinglePrice = $icedCappuccinoDoublePrice = '';
 
 // Fetch logic: Retrieve updated prices from the database
@@ -43,10 +43,10 @@ if ($result && $result->num_rows > 0) {
             $icedCappuccinoDoublePrice = $row['double_price'];
         }
     }
+// handle errors
 } else {
     echo "Error fetching data: " . $db->error;
 }
 
 // Close the database connection after fetching
 $db->close();
-?>

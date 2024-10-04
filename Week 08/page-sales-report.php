@@ -50,7 +50,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaJam Coffee House - Sales Report</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="sales-report.js" defer></script>
+    <script src="report-Salesreport.js" defer></script>
 </head>
 <body>
     <div class="container">
