@@ -1,6 +1,6 @@
 <?php
 // Include the fetch_prices.php file to retrieve prices
-include 'fetch-prices.php'; // or use 'require' if you want the script to fail if the file is missing
+include 'price-fetch.php'; // or use 'require' if you want the script to fail if the file is missing
 
 // Now you can use the variables fetched in fetch_prices.php
 ?>

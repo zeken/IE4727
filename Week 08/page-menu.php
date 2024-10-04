@@ -1,6 +1,6 @@
 <?php
 // Include the fetch_prices.php file to retrieve prices
-include 'fetch-prices.php'; // or use 'require' if you want the script to fail if the file is missing
+include 'price-fetch.php'; // or use 'require' if you want the script to fail if the file is missing
 
 // Now you can use the variables fetched in fetch_prices.php
 ?>
@@ -46,7 +46,7 @@ include 'fetch-prices.php'; // or use 'require' if you want the script to fail i
         </nav>
 
         <!-- Added a form to wrap the menu and handle order submission -->
-        <form method="POST" action="submit-order.php">
+        <form method="POST" action="menu-Submitorder.php">
             <div class="main-content">
                 <h2>Coffee at JavaJam</h2>
                 <div class="content-wrapper">
