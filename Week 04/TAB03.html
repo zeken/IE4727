@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice with Tables</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table border="1">
+        <caption> Birthday List </caption>
+        <tr>
+            <!-- <th>Name</th>
+            <th>Birthday</th> -->
+            <td colspan="2">Birthday List (colspan = 2)</td>
+        </tr>
+        <tr>
+            <!-- <td>James</td>
+            <td>11/08</td> -->
+            <td rowspan="2">This spans 2 rows</td>
+        </tr>
+        <tr>
+
+            <td>Karen</td>
+            <td>4/17</td>
+        </tr>
+        <tr>
+
+            <td>Sparky</td>
+            <td>11/28</td>
+        </tr>
+    </table>
+    <p>Table border = 0</p>
+    <table border="0">
+        <thead>
+            <tr>
+                <th id="day">Day</th>
+                <th id="hours">Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="day">Monday</td>
+                <td headers="hours">4</td>
+            </tr>
+            <tr>
+                <td headers="day">Tuesday</td>
+                <td headers="hours">3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td headers="day">Total</td>
+                <td headers="hours">7</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

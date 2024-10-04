@@ -1,0 +1,57 @@
+<form action="show_get.php" method="get">
+    <!-- Your form fields go here -->
+</form>
+
+<form action="show_post.php" method="post">
+    <!-- Your form fields go here -->
+</form>
+
+<form action="show_post.php" method="post">
+    <table class="jobs-table">
+        <tr>
+            <td><label for="name">*Name:</label></td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your name here" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">*E-mail:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Enter your Email-ID here" required></td>
+        </tr>
+        <tr>
+            <td><label for="startdate">Start Date:</label></td>
+            <td><input type="date" id="startdate" name="startdate"></td>
+        </tr>
+        <tr>
+            <td><label for="experience">*Experience:</label></td>
+            <td><textarea id="experience" name="experience" rows="4" placeholder="Enter your past experience here" required></textarea></td>
+        </tr>
+    </table>
+    <div class="form-buttons">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Apply Now">
+    </div>
+</form>
+
+<form action="show_get.php" method="get">
+    <table class="jobs-table">
+        <tr>
+            <td><label for="name">*Name:</label></td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your name here" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">*E-mail:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Enter your Email-ID here" required></td>
+        </tr>
+        <tr>
+            <td><label for="startdate">Start Date:</label></td>
+            <td><input type="date" id="startdate" name="startdate"></td>
+        </tr>
+        <tr>
+            <td><label for="experience">*Experience:</label></td>
+            <td><textarea id="experience" name="experience" rows="4" placeholder="Enter your past experience here" required></textarea></td>
+        </tr>
+    </table>
+    <div class="form-buttons">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Apply Now">
+    </div>
+</form>

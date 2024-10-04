@@ -1,0 +1,311 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f0d793;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1024px;
+    min-width: 800px; /* Ensure a minimum width of 800px */
+    margin: 0 auto;
+    background-color: #f5deb3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    position: relative;
+    background-color: #d2b48c;
+    height: 120px;
+    text-align: center;
+}
+
+header .logo {
+    padding-top: 25px;
+    max-width: 50%;
+    height: auto;
+}
+
+nav {
+    width: 150px;
+    float: left;
+    min-height: initial; /* Full height minus header and footer */
+    text-align: center; /* Center the list horizontally */
+    background-color: #f5deb3; /* Add background color */
+    padding-top: 20px; /* Adjust padding to control vertical position */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 1px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4b2e1f;
+}
+
+nav ul li a:hover {
+    color: #bd8f52;
+}
+
+/* a:active {
+    color: #ff0000;
+    text-decoration: underline;
+} */
+
+.main-content {
+    padding: 20px;
+    margin-left: 150px; /* Ensure it doesn't overlap with the nav */
+    background-color: #f5f5dd;
+    min-height: 300px; /* Ensure content height minus header and footer */
+}
+
+.main-content h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #4b2e1f;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.content-wrapper {
+    display: block;
+}
+
+.road-img {
+    width: 300px;
+    height: 150px;
+    margin-right: 40px;
+    margin-left: 30px;
+    border: 1px solid #b99872;
+    float: left; /* Float the image to the left of the text */
+}
+
+.text-content {
+    max-width: 400px;
+    overflow: hidden; /* Clear the float */
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    margin: 2px 0;
+    font-size: 1.1em;
+    color: #4b2e1f;
+}
+
+.text-content ul li img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+address {
+    margin-top: 20px;
+    font-style: normal;
+    color: #4b2e1f;
+}
+
+footer {
+    background-color: #d2b48c;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    border-top: 1px solid #b99872;
+    clear: both; /* Ensure footer is below floats */
+}
+
+footer a:hover {
+    color: black;
+}
+
+.menu-table {
+    width: auto;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-collapse: collapse;
+}
+
+.menu-table tr:nth-child(odd) .menu-item,
+.menu-table tr:nth-child(odd) .menu-description {
+    background-color: #d1b294; /* Lighter color for odd rows */
+}
+
+.menu-table tr:nth-child(even) .menu-item,
+.menu-table tr:nth-child(even) .menu-description {
+    background-color: #f7f7d2; /* Darker color for even rows */
+}
+
+.menu-item {
+    width: 25%;
+    padding: 10px;
+    text-align: center; /* Center horizontally */
+    vertical-align: middle; /* Center vertically */
+    font-weight: bold; /* Make the drink names bold */
+    border: 1px solid #f5f5dd;
+}
+
+.menu-description {
+    width: 50%;
+    padding: 10px;
+    vertical-align: middle; /* Ensure content is vertically centered */
+    border: 1px solid #f5f5dd;
+}
+
+.menu-description em {
+    display: block;
+    margin-top: 10px;
+    color: #4b2e1f;
+    font-weight: bold; /* Make the size and price bold */
+}
+
+.menu-table td {
+    padding: 10px;
+}
+
+.menu-table td input[type="number"], .menu-table td input[type="text"] {
+    width: 100%; /* Make sure input fields fill the column */
+}
+
+.menu-table td:nth-child(3), .menu-table td:nth-child(4) {
+    width: 10%; /* Set the width for Quantity and Subtotal columns */
+}
+
+/* Additional styling for inline radio buttons within menu-description */
+.menu-radio-inline label {
+    display: inline-block; /* Display radio buttons inline */
+    margin-right: 15px; /* Add space between Single and Double options */
+}
+
+/* Menu footer section: align the total price to the right */
+.menu-total-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Menu footer section: styling for the total price text */
+.menu-total-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4b2e1f;
+}
+
+
+.music-table {
+    width: 70%; /* Reduced width to add spacing on the sides */
+    margin: 20px auto; /* Center the table with spacing on the sides */
+    border-collapse: collapse;
+}
+
+.music-description {
+    background-color: #f5f5dd;
+    width: 100%;
+    padding: 20px; /* Add more padding inside each cell */
+    vertical-align: middle;
+}
+
+.month {
+    background-color: #e2d1b3;
+    text-align: left; /* left align the month name */
+    font-weight: bold;
+    padding: 0px; /* Reduced padding for the month */
+    margin-bottom: 5px; /* Reduced space between month and content below */
+}
+
+.artist-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 1px solid #b99872;
+}
+
+.music-description audio {
+    display: block;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.music-description strong {
+    color: #4b2e1f;
+    display: block;
+    margin-top: 10px;
+}
+
+.jobs-table {
+    width: 50%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left; /* Align the entire table to the left */
+}
+
+.jobs-table td {
+    padding: 10px;
+    vertical-align: top;
+    text-align: right; /* Align the labels to the right */
+}
+
+.jobs-table input[type="text"],
+.jobs-table input[type="email"],
+.jobs-table input[type="date"],
+.jobs-table textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #b99872;
+    border-radius: 3px;
+    background-color: #ffffff; /* Change input background to white */
+    text-align: left; /* Ensure inputs are aligned to the left */
+}
+
+.jobs-table label {
+    font-weight: bold;
+    color: #4b2e1f;
+    padding-right: 20px; /* Space between label and input */
+}
+
+.form-buttons {
+    text-align: left; /* Align the buttons to the left */
+    margin-top: 20px;
+}
+
+.form-buttons input[type="reset"],
+.form-buttons input[type="submit"] {
+    display: block; /* Stack buttons vertically */
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px; /* Space between Clear and Apply Now buttons */
+    background-color: #bd8f52;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-buttons input[type="reset"] {
+    background-color: #e2d1b3;
+    color: #4b2e1f;
+}
+
+.form-buttons input[type="reset"]:hover {
+    background-color: #ccbfae;
+}
+
+.form-buttons input[type="submit"]:hover {
+    background-color: #a67c52;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Dialog Boxes: alert, confirm and prompt </title>
+</head>
+
+<body>
+    <!-- Alert -->
+    <!-- <script type="text/javascript">
+        if (confirm("Are you ready?") == true) {
+            alert("Then we can proceed!");
+        }
+        else {
+            alett("We'll try when you feel better?");
+        }
+    </script> -->
+
+    <!-- Confirm -->
+    <!-- <script type="text/javascript">
+        document.write("It's a bird, ");
+        document.write("It's a plane <br>");
+        alert("It's Superman! ");
+    </script> -->
+
+    <!-- Prompt -->
+    <script type="text/javascript">
+        var name = prompt("What is your name?", "");
+        alert("Welcome to my world! " + name);
+        var age = prompt("Tell me your age. ", "Your age: ");
+        if (age == null) {// If user presses the cancel button
+            alert("Not sharing your age with me");
+        } else {
+            alert(age + " is young");
+        }
+        var live = alert(prompt("Where do you live? ", ""));
+        if (live == null) {// If user presses the cancel button
+            alert("Privacy matters, I see.");
+        } else {
+            alert("See you at " + age);
+        }
+
+    </script>
+</body>
+
+</html>

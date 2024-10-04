@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaJam Coffee House - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu-price.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/javajam-all-javalogo.png" alt="JavaJam Coffee House" class="logo">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="admin-price-update.html">Product Price Update</a></li>
+                <li><a href="admin-sales-report.html">Sales Report</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <h2>Coffee at JavaJam</h2>
+            <div class="content-wrapper">
+                <table class="menu-table">
+                    <!-- Just Java Row -->
+                    <tr>
+                        <td class="menu-item"><strong>Just Java</strong></td>
+                        <td class="menu-description">
+                            Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+                            <label><input type="radio" name="javaSize" value="2.00"> Endless Cup $2.00</label>
+                        </td>
+                        <td><input type="number" id="QtyJava" value="0" min="0"></td>
+                        <!-- <td><input type="text" id="Price_Java" value="0.00" readonly></td> -->
+                        <td><span id="Price_Java">0.00</span></td>
+                    </tr>
+                    <!-- Cafe au Lait Row -->
+                    <tr>
+                        <td class="menu-item"><strong>Cafe au Lait</strong></td>
+                        <td class="menu-description">
+                            House blended coffee infused into a smooth, steamed milk.<br>
+                            <div class="menu-radio-inline">
+                                <label><input type="radio" name="cafeaulaitSize" value="2.00"> Single $2.00</label>
+                                <label><input type="radio" name="cafeaulaitSize" value="3.00"> Double $3.00</label>
+                            </div>
+                        </td>
+                        <td><input type="number" id="QtyCafeaulait" value="0" min="0"></td>
+                        <!-- <td><input type="text" id="Price_Cafeaulait" value="0.00" readonly></td> -->
+                        <td><span id="Price_Cafeaulait">0.00</span>
+                    </tr>
+                    <!-- Iced Cappuccino Row -->
+                    <tr>
+                        <td class="menu-item"><strong>Iced Cappuccino</strong></td>
+                        <td class="menu-description">
+                            Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>
+                            <div class="menu-radio-inline">
+                                <label><input type="radio" name="cappuccinoSize" value="4.75"> Single $4.75</label>
+                                <label><input type="radio" name="cappuccinoSize" value="5.75"> Double $5.75</label>
+                            </div>
+                        </td>
+                        <td><input type="number" id="QtyCappuccino" value="0" min="0"></td>
+                        <!-- <td><input type="text" id="Price_Cappuccino" value="0.00" readonly></td> -->
+                        <td><span id="Price_Cappuccino">0.00</span></td>
+                    </tr>
+                </table>
+
+                <!-- Total Amount Section -->
+                <div class="menu-total-container">
+                    <strong class="menu-total-text">Total: <span id="totalPrice">$0.00</span></strong>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2014 JavaJam Coffee House<br>
+                <a href="mailto:abig005@e.ntu.edu.sg">Abigail@Lim.com</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

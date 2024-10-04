@@ -1,0 +1,54 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaJam Coffee House</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="wrapper">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Jobs at JavaJam</h1>
+            <p>
+                Want to work at JavaJam? Fill out the form below to start your application. Required
+                fields are <br />
+                marked with an asterisk *
+            </p>
+
+            <form action="show_post.php" method="post">
+                <label>*Name:</label>
+                <input type="text" name="CustName" id="CustName" placeholder="Enter your name here" required /><br />
+                <label>*E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email-ID here" required /><br />
+                <label>Start date:</label>
+                <input type="date" name="date" id="date" /><br />
+                <label>*Experience:</label>
+                <textarea type="text" name="experience" id="experience" rows="4" cols="40"
+                    placeholder="Enter your past experience here" required></textarea><br />
+                <input type="reset" value="Clear" /><br />
+                <input type="submit" value="Apply Now" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <small>Copyright &copy; 2014 JavaJam Coffeee House</small>
+        <a href="mailto:Abigail@Lim.com">abig0005@e.ntu.edu.sg</a></p>
+    </footer>
+</body>
+
+</html>
