@@ -52,17 +52,17 @@ document.addEventListener('DOMContentLoaded', function () {
                             console.log(`Error: No hidden input found for ${item} - ${size}`); // Log an error if the input field wasn't found
                         }
 
-                        // Update the display element showing the price on the page
-                        let priceElement;
-                        if (item === 'justJava') {
-                            priceElement = document.getElementById('justJavaPrice'); // For Just Java (no size)
-                        } else {
-                            priceElement = document.getElementById(`${item}${size.charAt(0).toUpperCase() + size.slice(1)}Price`); // For other products, update based on item and size
-                        }
+                        // // Update the display element showing the price on the page
+                        // let priceElement;
+                        // if (item === 'justJava') {
+                        //     priceElement = document.getElementById('justJavaPrice'); // For Just Java (no size)
+                        // } else {
+                        //     priceElement = document.getElementById(`${item}${size.charAt(0).toUpperCase() + size.slice(1)}Price`); // For other products, update based on item and size
+                        // }
 
-                        if (priceElement) {
-                            priceElement.textContent = parseFloat(newPrice).toFixed(2); // Display the new price in the appropriate field
-                        }
+                        // if (priceElement) {
+                        //     priceElement.textContent = parseFloat(newPrice).toFixed(2); // Display the new price in the appropriate field
+                        // }
 
                     } else {
                         // If an invalid price is entered, show an alert and uncheck the checkbox
