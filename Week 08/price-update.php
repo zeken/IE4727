@@ -96,37 +96,6 @@ if (isset($_POST['icedCappuccino'])) {
     }
 }
 
-// // Fetch logic: Retrieve updated prices from the database
-// $query = "SELECT product_name, endless_price, single_price, double_price FROM products";
-// $result = $db->query($query);
-
-// // Initialize variables to store prices
-// $justJavaPrice = $cafeAuLaitSinglePrice = $cafeAuLaitDoublePrice = $icedCappuccinoSinglePrice = $icedCappuccinoDoublePrice = '';
-
-// if ($result->num_rows > 0) {
-//     while ($row = $result->fetch_assoc()) {
-//         if ($row['product_name'] == 'Just Java') {
-//             $justJavaPrice = $row['endless_price'];
-//         } elseif ($row['product_name'] == 'Cafe au Lait') {
-//             $cafeAuLaitSinglePrice = $row['single_price'];
-//             $cafeAuLaitDoublePrice = $row['double_price'];
-//         } elseif ($row['product_name'] == 'Iced Cappuccino') {
-//             $icedCappuccinoSinglePrice = $row['single_price'];
-//             $icedCappuccinoDoublePrice = $row['double_price'];
-//         }
-//     }
-// }
-
-// echo '<pre>';
-// print_r([
-//     'justJavaPrice' => $justJavaPrice,
-//     'cafeAuLaitSinglePrice' => $cafeAuLaitSinglePrice,
-//     'cafeAuLaitDoublePrice' => $cafeAuLaitDoublePrice,
-//     'icedCappuccinoSinglePrice' => $icedCappuccinoSinglePrice,
-//     'icedCappuccinoDoublePrice' => $icedCappuccinoDoublePrice,
-// ]);
-// echo '</pre>';
-
 // Close the database connection after all updates have been processed
 $db->close();
 
