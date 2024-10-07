@@ -16,3 +16,12 @@ CREATE TABLE products (
     single_price DECIMAL(5,2),
     double_price DECIMAL(5,2)
 );
+-- Insert sample data into the products table
+INSERT INTO products (product_name, endless_price, single_price, double_price)
+VALUES 
+    ('Just Java', 6.00, NULL, NULL),
+    ('Cafe au Lait', NULL, 2.00, 3.00),
+    ('Iced Cappuccino', NULL, 4.75, 5.75);
+
+-- Verify that the data was inserted correctly
+SELECT * FROM products;
